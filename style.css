@@ -12,7 +12,7 @@
   
     display: flex;
   
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Poiret One', sans-serif;
   
     align-items: center;
   
@@ -32,15 +32,15 @@
   
     min-height: 8vh;
   
-    background-color: teal;
+    background-color: #303030;
   
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Poiret One', sans-serif;
   
   }
   
   .navbar {
   
-    color: white;
+    color: #f4d475;
   
     text-transform: uppercase;
   
@@ -68,7 +68,7 @@
   
   .nav-links a {
   
-    color: white;
+    color: #f4d475;
   
     text-decoration: none;
   
@@ -84,13 +84,13 @@
   
   .nav-links a:hover:not(.active) {
   
-    background-color: lightseagreen;
+    background-color: #303030;
   
   }
   
   .nav-links li a.active {
   
-    background-color: #4caf50;
+    background-color: #4d4c4c;
   
   } 
   /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
