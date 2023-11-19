@@ -94,8 +94,9 @@
   
   } 
 
+
   body {
-    background-color: #252525;
+    background-color: #303030;
     }
 
     .column {
@@ -119,15 +120,57 @@
     clear: both;
     }
 
-    .content-container {
-        border-top: 1px solid #f4d475; /* Add a 1px solid border at the top */
-      }
-
     
-      /* Responsive layout - make the columns stack on top of each other in mobile view */
+    /* Responsive layout - make the columns stack on top of each other in mobile view */
     @media only screen and (max-width: 1000px) {
-        .column {
-          width: 100%;
-          border: 1px solid #f4d475; /* Add a border around the column */
+    .column {
+      width: 100%;
+      color: #f4d475;
+      border: 2px solid #f4d475;
+      box-sizing: border-box;
+       /* Add a border around the column */
+    }}
+
+    /* Style links to remove underline and change color */
+    a {
+      text-decoration: none; /* Remove underline */
+      color: #ffcc00; /* Change link color to your desired color */
+    }
+
+    /* Style links inside the "column" class */
+    .column a {
+      color: #ffcc00; /* Change link color specifically for links inside the "column" class */
+    }
+
+        .about-us img {
+        display: block;
+        margin: 0 auto;
         }
+
+    .about-us {
+      font-size: 23px;
+      text-align: center;
+      font-family: 'Poiret One', sans-serif;
+      color: #f4d475;
+      margin: 25px;
+    }
+
+    .about-us p {
+      margin-top: 30px;
+      text-align: justify;
+      line-height: 1.5;
+    }
+
+    hr {
+      margin-bottom: 20px;
+      margin-top: 20px;
+      border: 1px solid #f4d475} /*add line*/
+    
+    /* Footer */
+    .footer {
+      padding: 20px;
+      text-align: center;
+      font-family: 'Poiret One', sans-serif;
+      color: #f4d475;
+      margin-bottom: 30px;
     }
