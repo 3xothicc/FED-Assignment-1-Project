@@ -1,53 +1,100 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
-  <head>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&family=Poiret+One&display=swap" rel="stylesheet">
 
-    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css">
+    <title>Amenities</title>
+</head>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<body>
 
-    <link
+    <!-- Javascript to fade in header -->
+    <script src="headerfadein.js"></script>  
+    <!-- Header -->
+    <img id="header-image" src="HOTEL ELIE.png" alt="Hotel Header" width="100%" height="auto">
+    <hr>
 
-      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
-
-      rel="stylesheet"
-
-    />
-
-    <link rel="stylesheet" href="../style.css" />
-
-    <title>Services</title>
-
-  </head>
-
-  <body>
-
+    <!-- Navigation Bar -->
     <nav>
-
-      <div class="navbar">
-
-        <h4>Navigation Bar</h4>
-
-      </div>
-
-      <ul class="nav-links">
-
-        <li><a href="./index.html">Home</a></li>
-
-        <li><a href="./about.html">About</a></li>
-
-        <li><a class="active" href="./services.html">Services</a></li>
-
-        <li><a href="./contact.html">Contact</a></li>
-
-      </ul>
-
+        <div class="navbar">
+            <h4>| HOTEL ELIE |</h4>
+        </div>
+        <ul class="nav-links">
+            <li><a href="./index.html"> Home</a></li>
+            <li><a href="./rooms.html"> Rooms</a></li>
+            <li><a class="active" href="./amenities.html"> Amenities</a></li>
+            <li><a href="./attractions.html"> Attractions</a></li>
+            <li><a href="./faq.html"> FAQ</a></li>
+        </ul>
     </nav>
 
-    <div class="body-text"><h1>This is Services Page!</h1></div>
+    <!-- Amenities Section -->
+    <div class="amenities">
+        <hr>
+        <h2>Amenities</h2>
+        <hr>
 
-  </body>
+        <!-- Amenity 1 -->
+        <div class="amenity">
+            <img src="1-food.svg" alt="Food Amenity" width=50 height=50>
+            <div class="amenity-details">
+                <h3>Diverse Dining Options</h3>
+                <p>Savor diverse culinary delights at our hotel with multiple dining options, each offering exquisite flavors in a stylish and inviting atmosphere.</p>
+            </div>
+        </div>
+
+        <!-- Amenity 2 -->
+        <div class="amenity">
+            <img src="laundry_icon.svg" alt="Laundry Amenity" width=50 height=50>
+            <div class="amenity-details">
+                <h3>Complimentary Laundry Services</h3>
+                <p>Enjoy a carefree stay with our complimentary hotel laundry services—let us handle the chores while you relax and unwind in comfort.</p>
+            </div>
+        </div>
+
+        <!-- Amenity 3 -->
+        <div class="amenity">
+            <img src="gym_icon.svg" alt="Gym Amenity" width=50 height=50>
+            <div class="amenity-details">
+                <h3>Gymnasium</h3>
+                <p>Experience a state-of-the-art fitness facility at our hotel gymnasium, offering cutting-edge equipment and inspiring spaces for an energizing workout.</p>
+            </div>
+        </div>
+
+        <!-- Amenity 4 -->
+        <div class="amenity">
+            <img src="14-function-venues-meetings.svg" alt="Venue Amenity" width=50 height=50>
+            <div class="amenity-details">
+                <h3>Function Venues</h3>
+                <p>Elegant hotel function venues for seamless events. Our spaces combine sophistication with modern amenities, ensuring memorable gatherings for every occasion.</p>
+            </div>
+        </div>
+
+        <!-- Amenity 5 -->
+        <div class="amenity">
+            <img src="15-club-lounge.svg" alt="Lounge Amenity" width=50 height=50>
+            <div class="amenity-details">
+                <h3>Club Lounge</h3>
+                <p>Indulge in luxury at our hotel's exclusive club lounge, where personalized service meets sophisticated ambiance, creating a haven of elegance.</p>
+            </div>
+        </div>
+
+        <hr>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <h2>Book A Stay With Us Today!</h2>
+        <br>
+        <p>Hotel Elie - Bringing You Quality Service Since 1921</p>
+        <br>
+        <p>Copyright © 2023 HotelElie.com - All rights reserved.</p>
+    </div>
+
+</body>
 
 </html>

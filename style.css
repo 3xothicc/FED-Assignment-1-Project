@@ -1,176 +1,246 @@
 * {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
 
-    margin: 0px;
-  
-    padding: 0px;
-  
-    box-sizing: border-box;
-  
-  }
-  
-  .body-text {
-  
-    display: flex;
-  
-    font-family: 'Poiret One', sans-serif;
-  
-    align-items: center;
-  
-    justify-content: center;
-  
-    
-  
-  }
-  
-  nav {
-  
-    display: flex;
-  
-    justify-content: space-around;
-  
-    align-items: center;
-  
-    min-height: 8vh;
-  
-    background-color: #303030;
-  
-    font-family: 'Poiret One', sans-serif;
-  
-  }
-  
-  .navbar {
-  
-    color: #f4d475;
-  
-    text-transform: uppercase;
-  
-    letter-spacing: 5px;
-  
-    font-size: 20px;
-  
-  }
-  
-  .nav-links {
-  
-    display: flex;
-  
-    justify-content: space-around;
-  
-    width: 20%;
-  
-  }
-  
-  .nav-links li {
-  
-    list-style: none;
-  
-  }
-  
-  .nav-links a {
-  
-    color: #f4d475;
-  
-    text-decoration: none;
-  
-    letter-spacing: 3px;
-  
-    font-weight: bold;
-  
-    font-size: 14px;
-  
-    padding: 14px 16px;
-  
-  }
-  
-  .nav-links a:hover:not(.active) {
-  
-    background-color: #303030;
-  
-  }
-  
-  .nav-links li a.active {
-  
-    background-color: #4d4c4c;
-  
-  } 
+.body-text {
+  display: flex;
+  font-family: 'Poiret One', sans-serif;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: #303030;
+  font-family: 'Poiret One', sans-serif;
+}
+
+.navbar {
+  color: #f4d475;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 20%;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: #f4d475;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 14px 16px;
+}
+
+.nav-links a:hover:not(.active) {
+  background-color: #303030;
+}
+
+.nav-links li a.active {
+  background-color: #4d4c4c;
+}
+
+body {
+  background-color: #303030;
+}
+
+.column {
+  font-family: 'Poiret One', sans-serif;
+  color: #f4d475;
+  font-size: 23px;
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 
-  body {
-    background-color: #303030;
-    }
+a {
+  text-decoration: none;
+  color: #ffcc00;
+}
 
-    .column {
-        font-family: 'Poiret One', sans-serif;
-        color: #f4d475;
-        font-size: 23px;
-        float: left;
-        width: 50%;
-        padding: 10px;
-        height: 300px; 
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+.column a {
+  color: #ffcc00;
+}
+
+.about-us img {
+  display: block;
+  margin: 0 auto;
+}
+
+.about-us {
+  font-size: 23px;
+  text-align: center;
+  font-family: 'Poiret One', sans-serif;
+  color: #f4d475;
+  margin: 25px;
+}
+
+
+
+
+
+/* Image on the Left */
+.column img {
+    width: 65%; 
+    height: auto;
+}
+
+/* About Us Section on the Right */
+.column .about-us {
+    margin: 25px; 
+    text-align: left; 
+}
+
+hr {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border: 1px solid #f4d475;
+}
+
+.amenities {
+  text-align: center;
+  font-family: 'Poiret One', sans-serif;
+  color: #f4d475;
+}
+
+.amenity {
+  margin: 20px;
+}
+
+.amenity img {
+  margin-top: 20px;
+  width: 50px;
+  height: 50px;
+}
+
+.amenity-details {
+  margin-top: 15px;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  font-family: 'Poiret One', sans-serif;
+  color: #f4d475;
+  margin-bottom: 30px;
+}
+
+    /*Header Fadein*/    
+    body {
+            margin: 0;
+            padding: 0;
         }
-        
-    /* Clear floats after the columns */
-    .row:after {
-    content: "";
-    display: table;
-    clear: both;
-    }
 
-    
-    /* Responsive layout - make the columns stack on top of each other in mobile view */
-    @media only screen and (max-width: 1000px) {
-    .column {
+        #header-image {
+            opacity: 0;
+            transition: opacity 2s ease-in-out;
+        }
+
+
+/*when in mobile mode*/
+@media only screen and (max-width: 1000px) {
+  .column {
       width: 100%;
       color: #f4d475;
       border: 2px solid #f4d475;
       box-sizing: border-box;
-       /* Add a border around the column */
-    }}
+  }
 
-    /* Style links to remove underline and change color */
-    a {
-      text-decoration: none; /* Remove underline */
-      color: #ffcc00; /* Change link color to your desired color */
-    }
+  .about-us {
+    font-size: 24px;
+  }
 
-    /* Style links inside the "column" class */
-    .column a {
-      color: #ffcc00; /* Change link color specifically for links inside the "column" class */
-    }
+  .column img {
+    width: 50%; /* Adjust as needed */
+    height: auto;
+  }
 
-        .about-us img {
-        display: block;
-        margin: 0 auto;
-        }
+  .amenities {
+    font-size: 12px;
+  }
+  
+  
+  .footer {
+    font-size: 12px;
+  }
+}
 
-    .about-us {
-      font-size: 23px;
-      text-align: center;
-      font-family: 'Poiret One', sans-serif;
-      color: #f4d475;
-      margin: 25px;
-    }
 
-    .about-us p {
-      margin-top: 30px;
-      text-align: justify;
-      line-height: 1.5;
-    }
+/*button for booking*/
+.book-now-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  background-color: #f4d475;
+  color: #303030;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+}
 
-    hr {
-      margin-bottom: 20px;
-      margin-top: 20px;
-      border: 1px solid #f4d475} /*add line*/
-    
-    /* Footer */
-    .footer {
-      padding: 20px;
-      text-align: center;
-      font-family: 'Poiret One', sans-serif;
-      color: #f4d475;
-      margin-bottom: 30px;
-    }
+.book-now-btn:hover {
+  background-color: #2980b9;
+  transform: scale(1.1);
+}
+
+
+.rooms {
+  text-align: center;
+  font-family: 'Poiret One', sans-serif;
+  color: #f4d475;
+}
+
+.room {
+  margin: 20px;
+}
+
+.room-details {
+  margin-top: 15px;
+}
+
+.faq {
+  text-align: center;
+  font-family: 'Poiret One', sans-serif;
+  color: #f4d475;
+  margin: 20px;
+}
+
+.attractions {
+  text-align: center;
+  font-family: 'Poiret One', sans-serif;
+  color: #f4d475;
+  margin: 20px;
+}
+
+.attractions {
+  margin-top: 20px;
+}
+

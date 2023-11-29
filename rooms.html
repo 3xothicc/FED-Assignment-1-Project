@@ -1,53 +1,99 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
-  <head>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&family=Poiret+One&display=swap" rel="stylesheet">
 
-    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css">
+    <title>Rooms</title>
+</head>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<body>
 
-    <link
+    <!-- Javascript to fade in header -->
+    <script src="headerfadein.js"></script>  
+    <!-- Header -->
+    <img id="header-image" src="HOTEL ELIE.png" alt="Hotel Header" width="100%" height="auto">
+    <hr>
 
-      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
-
-      rel="stylesheet"
-
-    />
-
-    <link rel="stylesheet" href="../style.css" />
-
-    <title>About</title>
-
-  </head>
-
-  <body>
-
+    <!-- Navigation Bar -->
     <nav>
-
-      <div class="navbar">
-
-        <h4>Navigation Bar</h4>
-
-      </div>
-
-      <ul class="nav-links">
-
-        <li><a href="./index.html">Home</a></li>
-
-        <li><a class="active" href="./about.html">About</a></li>
-
-        <li><a href="./services.html">Services</a></li>
-
-        <li><a href="./contact.html">Contact</a></li>
-
-      </ul>
-
+        <div class="navbar">
+            <h4>| HOTEL ELIE |</h4>
+        </div>
+        <ul class="nav-links">
+            <li><a href="./index.html"> Home</a></li>
+            <li><a class="active" href="./rooms.html"> Rooms</a></li>
+            <li><a href="./amenities.html"> Amenities</a></li>
+            <li><a href="./attractions.html"> Attractions</a></li>
+            <li><a href="./faq.html"> FAQ</a></li>
+        </ul>
     </nav>
 
-    <div class="body-text"><h1>This is About Page!</h1></div>
+    <!-- Rooms Section -->
+    <div class="rooms">
+        <hr>
+        <h2>Rooms</h2>
+        <hr>
 
-  </body>
+        <!-- Room 1 -->
+        <div class="room">
+            <img src="deluxe king.jpg" alt="Room Type 1" width="100%" height="auto">
+            <div class="room-details">
+                <h3>Deluxe Room King</h3>
+                <p>Experience luxury in our Deluxe Rooms, featuring modern furnishings and stunning city views. Perfect for a comfortable and relaxing stay.</p>
+            </div>
+        </div>
+
+        <!-- Room 2 -->
+        <div class="room">
+            <img src="deluxe twin.jpg" alt="Room Type 2" width="100%" height="auto">
+            <div class="room-details">
+                <h3>Deluxe Room Twin</h3>
+                <p>Indulge in sophistication with our Executive Suites. These spacious and elegantly designed rooms offer a blend of comfort and style for a memorable stay.</p>
+            </div>
+        </div>
+
+        <!-- Room 3 -->
+        <div class="room">
+            <img src="executive.jpg" alt="Room Type 3" width="100%" height="auto">
+            <div class="room-details">
+                <h3>Executive</h3>
+                <p>Enjoy the pinnacle of luxury in our Premium Suites. These lavishly appointed suites provide a spacious retreat with exclusive amenities for a truly indulgent experience.</p>
+            </div>
+        </div>
+
+        <!-- Suite Section -->
+        <hr>
+        <h2>Suites</h2>
+        <hr>
+
+        <!-- Suite 1 -->
+        <div class="room">
+            <img src="Suite.jpg" alt="Suite Image" width="100%" height="auto">
+            <div class="room-details">
+                <h3>Deco Suite</h3>
+                <p>Step into opulence with our Presidential Suite. This grand and luxurious suite offers unparalleled comfort, personalized service, and breathtaking views for an unforgettable stay.</p>
+            </div>
+        </div>
+
+        <!-- Book Now Button -->
+        <a href="bookingpage.html" class="book-now-btn" style="transform: scale(1.5);">Book Now!</a>
+
+        <hr>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <h2>Book A Stay With Us Today!</h2>
+        <br>
+        <p>Hotel Elie - Bringing You Quality Service Since 1921</p>
+        <br>
+        <p>Copyright © 2023 HotelElie.com - All rights reserved.</p>
+    </div>
+
+</body>
 
 </html>

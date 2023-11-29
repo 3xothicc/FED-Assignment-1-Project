@@ -1,53 +1,82 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
-  <head>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&family=Poiret+One&display=swap" rel="stylesheet">
 
-    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css">
+    <title>Attractions</title>
+</head>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<body>
 
-    <link
+    <!-- Javascript to fade in header -->
+    <script src="headerfadein.js"></script>
+    <!-- Header -->
+    <img id="header-image" src="HOTEL ELIE.png" alt="Hotel Header" width="100%" height="auto">
+    <hr>
 
-      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
-
-      rel="stylesheet"
-
-    />
-
-    <link rel="stylesheet" href="../style.css" />
-
-    <title>Services</title>
-
-  </head>
-
-  <body>
-
+    <!-- Navigation Bar -->
     <nav>
-
-      <div class="navbar">
-
-        <h4>Navigation Bar</h4>
-
-      </div>
-
-      <ul class="nav-links">
-
-        <li><a href="./index.html">Home</a></li>
-
-        <li><a href="./about.html">About</a></li>
-
-        <li><a class="active" href="./services.html">Services</a></li>
-
-        <li><a href="./contact.html">Contact</a></li>
-
-      </ul>
-
+        <div class="navbar">
+            <h4>| HOTEL ELIE |</h4>
+        </div>
+        <ul class="nav-links">
+            <li><a href="./index.html"> Home</a></li>
+            <li><a href="./rooms.html"> Rooms</a></li>
+            <li><a href="./amenities.html"> Amenities</a></li>
+            <li><a class="active" href="./attractions.html"> Attractions</a></li>
+            <li><a href="./faq.html"> FAQ</a></li>
+        </ul>
     </nav>
 
-    <div class="body-text"><h1>This is Services Page!</h1></div>
+    <!-- Attractions Section -->
+    <div class="attractions">
+        <hr>
+        <h2>Nearby Attractions</h2>
+        <hr>
 
-  </body>
+        <!-- Attraction 1 -->
+        <div class="attraction">
+            <img src="france-top-attractions-alsace-villages.jpg" alt="Alsace Villages" width="100%" height="auto">
+            <div class="attraction-details">
+                <h3>Alsace Villages</h3>
+                <p>These picturesque Alsatian villages feature pastel-painted, half-timbered houses clustered around small parish churches.</p>
+            </div>
+        </div>
+
+        <!-- Attraction 2 -->
+        <div class="attraction">
+            <img src="IMG_0236.jpg" alt="Aurelie Radio Tower" width="100%" height="auto">
+            <div class="attraction-details">
+                <h3>Aurelie Radio Tower</h3>
+                <p>Aurelie Radio Tower: an iconic landmark offering breathtaking views, blending modern architecture with historic charm, a must-visit for panoramic cityscapes.</p>
+            </div>
+        </div>
+
+        <!-- Attraction 3 -->
+        <div class="attraction">
+            <img src="france-top-attractions-provence.jpg" alt="Provence" width="100%" height="auto">
+            <div class="attraction-details">
+                <h3>Provence</h3>
+                <p>Escape into a bucolic landscape of olive groves, sun-drenched rolling hills, and deep purple lavender fields, with little villages nestled in the valleys and perched on rocky outcrops.</p>
+            </div>
+        </div>
+
+        <hr>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <h2>Book A Stay With Us Today!</h2>
+        <br>
+        <p>Hotel Elie - Bringing You Quality Service Since 1921</p>
+        <br>
+        <p>Copyright © 2023 HotelElie.com - All rights reserved.</p>
+    </div>
+
+</body>
 
 </html>
