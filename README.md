@@ -19,12 +19,8 @@ https://www.figma.com/file/xs0UGHt0PIifL5YO6MvAZv/FED_S10259948_JunKai_Assg1_wir
 
 
 Features
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
-
-Existing Features
-Feature 1 - allows users X to achieve Y, by having them fill out Z
-...
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
+Book Now: allows users to book after looking at the room selection. Button will lead useer to the booking page.
+Booking form: allows users to choose the room they want, f
 
 Features Left to Implement
 Another feature idea

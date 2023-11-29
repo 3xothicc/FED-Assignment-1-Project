@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookingPage</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Limelight&family=Poiret+One&display=swap" rel="stylesheet">
@@ -63,30 +63,29 @@
             display: none;
         }
     </style>
-    <title>Your Page Title</title>
 </head>
 
 <body>
 
-    <!-- Javascript to fade in header -->
-    <script src="headerfadein.js"></script>
-    <!-- Header -->
-    <img id="header-image" src="HOTEL_ELIE.png" alt="Hotel Header">
-    <hr>
-
-    <!-- Navigation Bar -->
-    <nav>
-        <div class="navbar">
-            <h4>| HOTEL ELIE |</h4>
-        </div>
-        <ul class="nav-links">
-            <li><a href="./index.html"> Home</a></li>
-            <li><a href="./rooms.html"> Rooms</a></li>
-            <li><a href="./amenities.html"> Amenities</a></li>
-            <li><a class="active" href="./attractions.html"> Attractions</a></li>
-            <li><a href="./faq.html"> FAQ</a></li>
-        </ul>
-    </nav>
+        <!-- Javascript to fade in header -->
+        <script src="headerfadein.js"></script>
+        <!-- Header -->
+        <img id="header-image" src="HOTEL_ELIE.png" alt="Hotel Header">
+        <hr>
+    
+        <!-- Navigation Bar -->
+        <nav>
+            <div class="navbar">
+                <h4>| HOTEL ELIE |</h4>
+            </div>
+            <ul class="nav-links">
+                <li><a href="./index.html"> Home</a></li>
+                <li><a class="active" href="./rooms.html"> Rooms</a></li>
+                <li><a href="./amenities.html"> Amenities</a></li>
+                <li><a href="./attractions.html"> Attractions</a></li>
+                <li><a href="./faq.html"> FAQ</a></li>
+            </ul>
+        </nav>
 
     <!-- Booking Form -->
     <div class="container">
@@ -105,19 +104,15 @@
                 <input type="date" id="dob" name="dob" required>
             </div>
             <div class="form-group">
-                <label for="male">Male</label>
-                <input type="radio" id="male" name="gender" value="male" required>
-            
-                <label for="female">Female</label>
-                <input type="radio" id="female" name="gender" value="female">
-            
-                <label for="other">Other</label>
-                <input type="radio" id="other" name="gender" value="other">
+                <label for="male">Gender:</label>
+                <input type="radio" id="male" name="gender" value="male" required> Male
+                <input type="radio" id="female" name="gender" value="female"> Female
+                <input type="radio" id="other" name="gender" value="other"> Other
             </div>
             <div class="form-group">
                 <label for="roomType">Choose a room:</label>
                 <select id="roomType" name="roomType" required>
-                    <option value="" disabled selected>Select Room Type</option>
+                    <option value="" disabled selected>Select a room</option>
                     <option value="deluxeKing">Deluxe King - $298/night</option>
                     <option value="deluxeTwin">Deluxe Twin - $232/night</option>
                     <option value="executive">Executive - $423/night</option>
@@ -139,65 +134,77 @@
     </div>
 
     <!-- Payment Form -->
-<div class="form-group">
-    <label for="paymentOption">Payment Option:</label>
-    <select id="paymentOption" required>
-        <option value="" disabled selected>Select Payment Option</option>
-        <option value="mastercard">Mastercard</option>
-        <option value="visa">Visa</option>
-    </select>
-</div>
+    <div id="payment-form" class="hidden">
+        <h2>Payment Information</h2>
+        <form id="paymentForm">
+        <div class="form-group">
+            <label for="paymentOption">Payment Option:</label>
+            <select id="paymentOption" required>
+                <option value="" disabled selected>Select a payment option</option>
+                <option value="mastercard">Mastercard</option>
+                <option value="visa">Visa</option>
+            </select>
+        </div>
 
-<!-- Credit Card Details -->
-<div id="creditCardDetails" class="hidden">
-    <div class="form-group">
-        <label for="cardNumber">Card Number:</label>
-        <input type="text" id="cardNumber" name="cardNumber" required>
-    </div>
-    <div class="form-group">
-        <label for="expirationDate">Expiration Date:</label>
-        <input type="text" id="expirationDate" name="expirationDate" placeholder="MM/YYYY" required>
-    </div>
-    <div class="form-group">
-        <label for="securityCode">Security Code:</label>
-        <input type="text" id="securityCode" name="securityCode" required>
-    </div>
-    <div class="form-group">
-        <label for="firstName">First Name:</label>
-        <input type="text" id="firstName" name="firstName" required>
-    </div>
-    <div class="form-group">
-        <label for="lastName">Last Name:</label>
-        <input type="text" id="lastName" name="lastName" required>
-    </div>
-    <div class="form-group">
-        <label for="billingAddress">Billing Address:</label>
-        <input type="text" id="billingAddress" name="billingAddress" required>
-    </div>
-    <div class="form-group">
-        <label for="city">City:</label>
-        <input type="text" id="city" name="city" required>
-    </div>
-    <div class="form-group">
-        <label for="zipCode">Zip or Postal Code:</label>
-        <input type="text" id="zipCode" name="zipCode" required>
-    </div>
-    <div class="form-group">
-        <label for="country">Country:</label>
-        <input type="text" id="country" name="country" required>
-    </div>
-    <div class="form-group">
-        <label for="phone">Phone Number:</label>
-        <input type="text" id="phone" name="phone" required>
+            <!-- Credit Card Details -->
+            <div id="creditCardDetails" class="hidden">
+                <div class="form-group">
+                    <label for="cardNumber">Card Number:</label>
+                    <input type="text" id="cardNumber" name="cardNumber" required>
+                </div>
+                <div class="form-group">
+                    <label for="expirationDate">Expiration Date:</label>
+                    <input type="text" id="expirationDate" name="expirationDate" placeholder="MM/YYYY" required>
+                </div>
+                <div class="form-group">
+                    <label for="securityCode">Security Code:</label>
+                    <input type="text" id="securityCode" name="securityCode" required>
+                </div>
+                <div class="form-group">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+                <div class="form-group">
+                    <label for="billingAddress">Billing Address:</label>
+                    <input type="text" id="billingAddress" name="billingAddress" required>
+                </div>
+                <div class="form-group">
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city" required>
+                </div>
+                <div class="form-group">
+                    <label for="zipCode">Zip or Postal Code:</label>
+                    <input type="text" id="zipCode" name="zipCode" required>
+                </div>
+                <div class="form-group">
+                    <label for="country">Country:</label>
+                    <input type="text" id="country" name="country" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="text" id="phone" name="phone" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <button type="button" onclick="submitPaymentForm()" class="btn-submit">Submit</button>
+            </div>
+        </form>
     </div>
 
-    <div class="form-group">
-        <button type="button" onclick="submitPaymentForm()" class="btn-submit">Submit</button>
+    <!-- Confirmation Message -->
+    <div id="confirmation" class="hidden">
+        <h2>Payment Complete</h2>
+        <p>Thank You For Booking With Us!</p>
     </div>
-</div>
 
-<!-- Confirmation Message -->
-<div id="confirmation" class="hidden">
-    <h2>Payment Complete</h2>
-    <p>Thank You For Booking With Us!</p>
-</div>
+    <!-- javascript file for payment -->
+    <script src="bookingform.js"></script>
+
+</body>
+
+</html>
