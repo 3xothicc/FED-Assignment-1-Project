@@ -20,33 +20,13 @@ https://www.figma.com/file/xs0UGHt0PIifL5YO6MvAZv/FED_S10259948_JunKai_Assg1_wir
 
 Features
 Book Now: allows users to book after looking at the room selection. Button will lead useer to the booking page.
-Booking form: allows users to choose the room they want, f
-
-Features Left to Implement
-Another feature idea
-Technologies Used
-In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
-
-JQuery
-The project uses JQuery to simplify DOM manipulation.
-Testing
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
-
-Contact form:
-Go to the "Contact Us" page
-Try to submit the empty form and verify that an error message about the required fields appears
-Try to submit the form with an invalid email address and verify that a relevant error message appears
-Try to submit the form with all inputs valid and verify that a success message appears.
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
-
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
-
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
+Booking form: allows users to choose the room they want, for how many nights, and if they want breakfast.
+Payment options: allows users to make payment after booking.
+5-page navigation: navbar to cycle through pages.
 
 Credits
-Content
-The text for section Y was copied from the Wikipedia article Z
-Media
-The photos used in this site were obtained from ...
-Acknowledgements
-I received inspiration for this project from X
+Inspiration taken from:
+https://www.villagehotels.asia/en/hotels/village-hotel-changi#
+https://www.tripadvisor.com/Hotel_Feature-g274707-d280821-zft1-Art_Deco_Imperial_Hotel.html#photos;aggregationId=&albumid=106&filter=7&ff=385122406
+https://www.booking.com/searchresults.html?aid=7344331&label=metatripad-link-dmetasg-hotel-25132_xqdz-fa186713f089502d7f706186ec147efd_los-01_bw-011_tod-0_dom-comsg_curr-SGD_gst-02_nrm-01_clkid-0cc6523d-4a4d-4928-a05b-e251b2a1ef33_aud-0000_mbl-L_pd-B_sc-2_defdate-1_spo-0_clksrc-0_mcid-10&utm_medium=dmeta&no_rooms=1&utm_content=los-01_bw-011_dom-comsg_defdate-1_spo-0_clksrc-0&utm_campaign=sg&utm_term=hotel-25132&srpvid=3cfb7105df6602af&utm_source=metatripad&highlighted_hotels=10952840&redirected=1&city=-73635&hlrd=no_dates&group_adults=2&source=hotel&group_children=0&expand_sb=1&keep_landing=1&sid=0979cfe57b156f401dbf6f1b180a5865#hotelTmpl
+images obtained from internet of self-created/edited.
